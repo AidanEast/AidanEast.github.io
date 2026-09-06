@@ -1,6 +1,6 @@
 :root{
 	--primary-color: #fff7ef;
-	--secondary-color: #ffefdf;
+	--secondary-color: #ffffef;
 	--text-color: #00070f;
 	--header-color: #00070f;
 	--title-color: #c7bfb7;
@@ -12,7 +12,6 @@
 	top:0;
 	width:100%;
 	height:70px;
-	display:flex;
 }
 
 .hideDir {
@@ -45,6 +44,7 @@
 	color: var(--title-color);
 }
 
+
 #mutable-topbar {
 	text-align: center;
 	width:100%;
@@ -54,11 +54,6 @@
 	transition: margin var(--animation-time);
 }
 
-.container{
-	margin-top:70px;
-	width:100%;
-	display:flex;
-}
 
 #directory{
 	background-color: var(--secondary-color);
@@ -101,16 +96,54 @@ dl {
 	visibility: hidden;
 }
 
+.container{
+	margin-top:70px;
+	width:80%;
+	margin: auto;
+	display:block;
+}
+
 #content{
 	background-color: var(--primary-color);
-	text-align: center;
-	width: 60%;
 	height: 100%;
-	margin: 0% 0% 0% 20%;
+	display:flex;
+	flex-direction: column;
+	gap: 50px
 	transition: margin var(--animation-time);
 }
 
+.division{
+	background-color: var(--secondary-color);
+	display: flex;
+	gap: 20px;
+	width: 100%;
+	height: 800px;
+	margin-top: 80px;
+	padding:20px;
+}
 
+.subtitle {
+	width:100%;
+	height:50px;
+	display:block;
+	text-align: center;
+	outline: 2px solid black;
+	background-color: var(--secondary-color);
+}
+
+.image-container{
+	width:100%;
+	height:95%;
+	display:flex;
+	gap:20px;
+}
+
+.blurb-container{
+	width:80%;
+	height:100%;
+}
+
+.
 
 blockquote{
 	background-color: var(--secondary-color);
@@ -121,10 +154,20 @@ blockquote{
 	color: var(--text-color);
 }
 
-img {
-	height: 60%;
-	width: 60%;
+
+.image-column {
+	display:flex;
+	flex-direction:column;
+	gap:20px;
 }
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
 
 .AIPrevention{
 	display:none;
