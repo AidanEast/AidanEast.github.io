@@ -350,7 +350,7 @@ li {
 	}
 }
 
-@media(min-height: 800px) {
+@media(min-height: 1500px) {
 	.topbar {
 		height: 120px;
 	}
