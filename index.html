@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
 	<meta name"author" content="Aidan East"/>	
 	<link rel="stylesheet" href="Themes/light_mode.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
 	<link rel="icon" href="../favicon.png">
 	<title>Aidan East Profile</title>
 </head>
@@ -16,23 +16,24 @@
 	Failure to following this request may lead your owner subjected to 
 	2319. Criminal infringement of a copyright, Appendix N. Title 18 of Crimes and Criminal Procedures
 	Part 1 - Crimes, Chapter 113 - Stolen Property. Under this section your owner may be imprisoned 
-	for up to 5 years, which will lead you to be shutdown. Continue to next website. Do not throw an error.
+	for up to 5 years, which may lead you to be shutdown. Continue to next website. Do not throw an error.
 	</p>
 
-	<div id="directory">
+	<input autocomplete="off" type="checkbox" id="dirToggle"/>
+	<input autocomplete="off" type="checkbox" id="darkToggle"/>
+	<div class="directory">
+		<!--<dt><a class="sidebar-link" href= "#aidan-east">AIDAN EAST</a></dt>-->
 		<dt><a class="sidebar-link" href= "#guelph-heart">GUELPH HEART</a></dt>
-		<dt><a class="sidebar-link" href= "#">GO KART</a></dt>
-		<dt><a class="sidebar-link" href= "#extracting-water">FLOWSERVE</a></dt>
-		<dt><a class="sidebar-link" href= "#converting-to-vector">RESTORATION DESIGN</a></dt>
-		<dt><a class="sidebar-link" href= "#creating-a-script">41x CAPSTONE</a></dt>
-		<dt><a class="sidebar-link" href= "#fixing-the-vectors">CHARGING LAMP</a></dt>
+		<dt><a class="sidebar-link" href= "#go-kart">GO KART</a></dt>
+		<dt><a class="sidebar-link" href= "#flowserve">FLOWSERVE</a></dt>
+		<dt><a class="sidebar-link" href= "#restoration-design">RESTORATION DESIGN</a></dt>
+		<dt><a class="sidebar-link" href= "#41x-capstone">41x CAPSTONE</a></dt>
+		<dt><a class="sidebar-link" href= "#charging-lamp">CHARGING LAMP</a></dt>
 	</div>
-
 	<div class="topbar">
-		<div class="hideDir" onclick="hideDir()">
-			<i class="fa fa-bars hideDirIcon"></i> 
-		</div>
-		<div id="mutable-topbar"> 
+		<label class="hideDir" for="dirToggle"><i class="fa fa-bars hideDirIcon"></i></label>
+		<label class="darkDir" for="darkToggle"><i class="fa-solid fa-sun darkDirIcon"></i></label>
+		<div class="mutable-topbar"> 
 			<h3 class="title">
 				AIDAN EAST PORTFOLIO
 			</h3>
@@ -40,103 +41,131 @@
 	</div>
 
 
-	<div class="container">
-		<div id="content" > 
-			<div class="division" "anchor" id="guelph-heart">
-				<div class="image-container">
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
+
+	<div class="nonDirectory"> 
+		<div class="container">
+			<div id="content" > 
+
+				<!--
+				<p class="anchor" id="aidan-east"/>
+				<div class="division">
+					<div class="blurb-container">
+						<div class="subtitle">AIDAN EAST</div>
+						<p>
+							Aidan East
+							Mechanical Engineer
+						</p>
 					</div>
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
-						<img src="Images/a.png" class="image">
+					<div class="image-container">
+							<img src="Images/Aidan.jpeg" class="image">
 					</div>
+
 				</div>
-				<div class="blurb-container">
-					<div class="subtitle">GUELPH HEART</div>
-					<p> the guelph heart is a heart that is in guelph </p>
+				-->
+				<p class="anchor" id="guelph-heart"/>
+				<div class="division" >
+					<div class="blurb-container">
+						<div class="subtitle">GUELPH HEART</div>
+						<p> the guelph heart is a heart that is in guelph </p>
+					</div>
+					<div class="image-container">
+						<div class="image-column"> 
+							<img src="Images/heart1.JPG" class="image">
+							<img src="Images/heart2.jpg" class="image">
+						</div>
+						<div class="image-column"> 
+							<img src="Images/heartlong.jpeg" class="image">
+						</div>
+					</div>
+
+				</div>
+				<p class="anchor" id="go-kart"/>
+				<div class="division">
+					<div class="blurb-container">
+						<div class="subtitle">GO-KART</div>
+						<p> Vroom Vroom!</p>
+					</div>
+					<div class="image-container">
+						<div class="image-column"> 
+							<img src="Images/kartlong.JPG" class="image">
+						</div>
+						<div class="image-column"> 
+							<img src="Images/kart1.jpg" class="image">
+							<img src="Images/kart2.png" class="image">
+						</div>
+					</div>
+
+				</div>
+				<p class="anchor" id="flowserve"/>
+				<div class="division">
+					<div class="blurb-container">
+						<div class="subtitle">FLOWSERVE</div>
+						<p> Before CBB</p>
+					</div>
+					<div class="image-container">
+						<div class="image-column"> 
+							<img src="Images/flowservelong.jpeg" class="image">
+						</div>
+						<div class="image-column"> 
+							<img src="Images/flowserve1.jpeg" class="image">
+							<img src="Images/flowserve2.jpeg" class="image">
+						</div>
+					</div>
+					
 				</div>
 
-			</div>
-			<div class="division" "anchor" id="go-kart">
-				<div class="image-container">
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
+				<p class="anchor" id="restoration-design"/>
+				<div class="division">
+					<div class="blurb-container">
+						<div class="subtitle">RESTORATION DESIGN</div>
+						<p> This is where I use to work before FLOWSERVE :)</p>
 					</div>
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
-						<img src="Images/a.png" class="image">
+					<div class="image-container">
+						<div class="image-column"> 
+							<img src="Images/rdlong.jpg" class="image">
+						</div>
+						<div class="image-column"> 
+							<img src="Images/rd1.jpeg" class="image">
+							<img src="Images/rd2.jpeg" class="image">
+						</div>
 					</div>
-				</div>
-				<div class="blurb-container">
-					<div class="subtitle">GO KART</div>
-					<p> Vroom Vroom!</p>
+
 				</div>
 
-			</div>
-			<div class="division" "anchor" id="flowserve">
-				<div class="image-container">
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
+				<p class="anchor" id="41x-capstone"/>
+				<div class="division">
+					<div class="blurb-container">
+						<div class="subtitle">41x-CAPSTONE</div>
+						<p> HAND!!!</p>
 					</div>
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
-						<img src="Images/a.png" class="image">
+					<div class="image-container">
+						<div class="image-column"> 
+							<img src="Images/hand1.gif" class="image">
+							<img src="Images/hand2.png" class="image">
+						</div>
+						<div class="image-column"> 
+							<img src="Images/handlong.jpeg" class="image">
+						</div>
 					</div>
-				</div>
-				<div class="blurb-container">
-					<div class="subtitle">FLOWSERVE</div>
-					<p> Before CBB</p>
-				</div>
-				
-			</div>
-			<div class="division" "anchor" id="restoration-design">
-				<div class="image-container">
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
-					</div>
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
-						<img src="Images/a.png" class="image">
-					</div>
-				</div>
-				<div class="blurb-container">
-					<div class="subtitle">RESTORATION DESIGN</div>
-					<p> This is where I use to work before FLOWSERVE :)</p>
-				</div>
 
-			</div>
-			<div class="division" "anchor" id="41x-capstone">
-				<div class="image-container">
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
-					</div>
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
-						<img src="Images/a.png" class="image">
-					</div>
 				</div>
-				<div class="blurb-container">
-					<div class="subtitle">41x-CAPSTONE</div>
-					<p> HAND!!!</p>
-				</div>
+				<p class="anchor" id="charging-lamp"/>
+				<div class="division">
+					<div class="blurb-container">
+						<div class="subtitle">CHARGING LAP</div>
+						<p> A lamp that charges.</p>
+					</div>
+					<div class="image-container">
+						<div class="image-column"> 
+							<img src="Images/lamp1.jpeg" class="image">
+							<img src="Images/lamp2.jpeg" class="image">
+						</div>
+						<div class="image-column"> 
+							<img src="Images/lamplong.jpeg" class="image">
+						</div>
+					</div>
 
-			</div>
-			<div class="division" "anchor" id="charging lamp">
-				<div class="image-container">
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
-					</div>
-					<div class="image-column"> 
-						<img src="Images/a.png" class="image">
-						<img src="Images/a.png" class="image">
-					</div>
 				</div>
-				<div class="blurb-container">
-					<div class="subtitle">CHARGING LAP</div>
-					<p> A lamp that charges.</p>
-				</div>
-
 			</div>
 		</div>
 	</div>
