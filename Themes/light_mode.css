@@ -265,7 +265,9 @@ li {
 	color: var(--text-color);
 }
 
-
+#dirToggle {
+	display:none;
+}
 
 @media (min-aspect-ratio: 5/6) {
 
@@ -289,6 +291,11 @@ li {
 	#dirToggle:checked ~ .nonDirectory {
 		width: 80%;
 		margin: 0% 0% 0% 20%;
+	}
+
+	#dirToggle:not(:checked) ~ .directory{
+		width: 0%;
+		transition: width var(--animation-time);
 	}
 }
 
@@ -321,23 +328,12 @@ li {
 		height: 35%;
 		transition: height var(--animation-time);
 	}
-	#dirToggle:checked ~ .nonDirectory {
-		margin-top: 90%;
+
+	#dirToggle:not(:checked) ~ .directory{
+		height: 0%;
+		transition: height var(--animation-time);
 	}
 
-	.anchor {
-		display:block;
-		position: relative;
-		top: 500px;
-		visibility: hidden;
-	}
-
-	#guelph-heart.anchor {
-		display:block;
-		position: relative;
-		top: -100px;
-		visibility: hidden;
-	}
 	.image-column {
 		display:flex;
 		flex-direction:row;
@@ -351,5 +347,44 @@ li {
 		height: 100%;
 		object-fit: cover;
 		border-radius: var(--rounded-edge);
+	}
+}
+
+@media(min-height: 800px) {
+	.topbar {
+		height: 120px;
+	}
+
+	.hideDir {
+		width: 120px;
+	}
+
+	.hideDirIcon {
+		margin-top: calc(50% - 1em);
+		font-size: 20px;
+	}
+
+	.darkDir {
+		width: 120px;
+	}
+
+	.darkDirIcon {
+		margin-top: calc(50% - 1em);
+		font-size: 20px;
+	}
+
+
+	h3 {
+		font-size: 24px;
+	}
+	.directory {
+		padding-top: 120px;
+
+	}
+	.container {
+		margin-top: 120px;
+	}
+	.division {
+		margin-top: 140px;
 	}
 }
